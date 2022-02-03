@@ -30,12 +30,19 @@ java -jar EnergyHubReplay-1.0-jar-with-dependencies.jar  variable file  timestam
 
 
 Where:
+
 **variable** is the field to find. Can be schedule, ambientTemp, lastAlertTs etc.
+
 **file** the data file path, can be jsonl or gz (I added 2 files in "files" folder)
-** timestamp** the timestamp to find
+
+**timestamp** the timestamp to find
+
 
 Example:
+
 java -jar EnergyHubReplay-1.0-jar-with-dependencies.jar  ambientTemp ..\files\thermostat-data.jsonl.gz 2016-01-01T03:00
 
+
 # Note:
+
 The project has test units, I added some test for file testing, but there are commented because for a unit test can't access to file. It's only for integration test in development phase.
