@@ -7,18 +7,27 @@ Based in:https://gist.github.com/harthur/4db5df3fed5e25a47aa6c3b9f01ab8ca
 # How build it
 
 You need java & maven.
+
 Inside of EnergyHub directory write:
+
 mvn clean
+
 mvn install
 
+
 Now you have your project ready, change to target directory
+
 cd target
+
 
 And now you have a jar file: EnergyHubReplay-1.0-jar-with-dependencies.jar
 
+
 ## Run it
 write:
+
 java -jar EnergyHubReplay-1.0-jar-with-dependencies.jar  variable file  timestamp
+
 
 Where:
 **variable** is the field to find. Can be schedule, ambientTemp, lastAlertTs etc.
